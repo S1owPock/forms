@@ -41,7 +41,7 @@
   },
   "dependencies": {
     "core-js": "^3.32.0",
-    "optimize-css-assets-webpack-plugin": "^6.0.1",
+    "css-minimizer-webpack-plugin": "^5.0.1",
     "terser-webpack-plugin": "^5.3.9"
   }
 }
