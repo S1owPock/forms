@@ -7,7 +7,9 @@
     "test": "jest",
     "lint": "eslint .",
     "build": "webpack --config webpack.prod.js",
-    "start": "webpack-dev-server --config webpack.dev.js"
+    "start": "webpack-dev-server --config webpack.dev.js",
+    "deploy": "gh-pages -d build",
+    "predeploy": "npm run build"
   },
   "repository": {
     "type": "git",
@@ -18,7 +20,7 @@
   "bugs": {
     "url": "https://github.com/S1owPock/forms/issues"
   },
-  "homepage": "https://github.com/S1owPock/forms#readme",
+  "homepage": "https://s1owpock.github.io/forms/",
   "devDependencies": {
     "@babel/cli": "^7.22.9",
     "@babel/core": "^7.22.9",
@@ -42,6 +44,7 @@
   "dependencies": {
     "core-js": "^3.32.0",
     "css-minimizer-webpack-plugin": "^5.0.1",
+    "gh-pages": "^5.0.0",
     "terser-webpack-plugin": "^5.3.9"
   }
 }
